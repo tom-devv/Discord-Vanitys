@@ -18,7 +18,7 @@ async function get(url) {
         })
         .catch(function(error) {
             console.log(chalk.green(`URL: ${url} STATUS: GOOD`))
-            let content = `${url}\n`
+            let content = `discord.gg/${url}\n`
             fs.appendFile('./working.txt', content, err => {
                 if (err) {
                     console.error(err)
