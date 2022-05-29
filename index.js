@@ -14,9 +14,17 @@ async function get(url) {
         .then(function(response) {
 
             console.log(chalk.red(`URL: ${url} STATUS: BAD`))
+
         })
         .catch(function(error) {
             console.log(chalk.green(`URL: ${url} STATUS: GOOD`))
+            let content = `${url}\n`
+            fs.appendFile('./working.txt', content, err => {
+                if (err) {
+                    console.error(err)
+                    return
+                }
+            })
         });
 
 
