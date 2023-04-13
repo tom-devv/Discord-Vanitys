@@ -5,14 +5,13 @@ Vanity checker will scan a word list and complete a check to see if the discord 
 ## Requirements
 
 ```bash
-npm i chalk@4.1.2
-npm i axios
+npm install
 ```
 
 Be sure to add a world list with the name `as.txt` in the same directoru
 
 ## Usage
 
-```python
+```bash
 node index.js
 ```
